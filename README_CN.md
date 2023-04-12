@@ -1,0 +1,2 @@
+# MapLibreFrame
+MapLibreFrame是一个基于MapLibre的webgis开发框架，为构建高效、动态的GIS应用提供了广泛的功能和工具。它使用先进的技术，包括WebGL和WebSockets，以实现高性能的图形渲染和数据交互。mapLibreFrame还提供了一套丰富的插件和API，以快速构建自定义地图应用。

@@ -1,0 +1,43 @@
+{
+  "name": "maplibreframe",
+  "version": "1.0.0",
+  "description": "MapLibreFrame is a MapLibre-based webgis development framework that provides a wide range of features and tools for building efficient, dynamic GIS applications.",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -p tinyify -g uglifyify exports.js > dist/maplibreframe.min.js && ncp ./src/css/maplibreframe.css ./dist/maplibreframe.css --stopOnErr",
+    "dev": "watchify exports.js --verbose -o dist/maplibreframe.js ",
+    "all": "browserify -p tinyify exports.js > dist/maplibreframe.min.js && watchify exports.js --verbose -o dist/maplibreframe.js ",
+    "serve": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hujinghaoabcd/MapLibreFrame.git"
+  },
+  "keywords": [
+    "MapLibre",
+    "framework",
+    "webgis",
+    "GIS",
+    "WebGL"
+  ],
+  "author": "@jinghaohu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hujinghaoabcd/MapLibreFrame/issues"
+  },
+  "homepage": "https://github.com/hujinghaoabcd/MapLibreFrame#readme",
+  "dependencies": {
+    "@maplibre/maplibre-gl-geocoder": "^1.5.0",
+    "http-server": "^14.1.1",
+    "maplibre-gl": "^2.4.0"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "ncp": "^2.0.0",
+    "tape": "^5.6.3",
+    "tinyify": "^4.0.0",
+    "uglifyify": "^5.0.2",
+    "watchify": "^4.0.0"
+  }
+}
